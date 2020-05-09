@@ -26,3 +26,10 @@ project "ImGui"
         
     filter { "system:windows", "configurations:Release" }
         buildoptions "/MT"
+
+    filter "system:linux"
+		pic "On"
+
+        systemversion "latest"
+        cppdialect "C++17"
+        staticruntime "On"
